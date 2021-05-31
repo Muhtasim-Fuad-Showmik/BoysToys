@@ -32,11 +32,6 @@ namespace BoysToys.Models
                 },
                 new Category
                 {
-                    CategoryID = 1,
-                    CategoryName = "Cars"
-                },
-                new Category
-                {
                     CategoryID = 4,
                     CategoryName = "Boats"
                 },
@@ -85,12 +80,12 @@ namespace BoysToys.Models
                 },
                 new Product
                 {
-                ProductID = 4,
-                ProductName = "Super Fast Car",
-                Description = "Use this super fast car to entertain guests. Lights and doors work!",
-                ImagePath="carfaster.png",
-                UnitPrice = 8.95,
-                CategoryID = 1
+                    ProductID = 4,
+                    ProductName = "Super Fast Car",
+                    Description = "Use this super fast car to entertain guests. Lights and doors work!",
+                    ImagePath="carfaster.png",
+                    UnitPrice = 8.95,
+                    CategoryID = 1
                 },
                 new Product
                 {
