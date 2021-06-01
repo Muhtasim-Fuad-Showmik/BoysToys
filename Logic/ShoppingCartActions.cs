@@ -201,5 +201,16 @@ namespace BoysToys.Logic
             public int PurchaseQuantity;
             public bool RemoveItem;
         }
+
+        public void MigrateCart(string cartId, string email)
+        {
+            var shoppingCart = _db.ShoppingCartItems.Where(c => c.CartId == cartId);
+            foreach (CartItem item in shoppingCart)
+            {
+                item.CartId = email;
+            }
+            HttpContext.Current.Session[CartSessionKey] = email;
+            _db.SaveChanges();
+        }
     }
 }
