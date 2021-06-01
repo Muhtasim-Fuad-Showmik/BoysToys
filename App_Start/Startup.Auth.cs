@@ -61,8 +61,8 @@ namespace BoysToys
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "",
-                ClientSecret = ""
+                ClientId = "278916296232-78d5qkg0t19tvrqn1qjf54u7t9nhf6tb.apps.googleusercontent.com",
+                ClientSecret = "5UsQY27i6srE-OC0zij4zhwP"
             });
         }
     }
