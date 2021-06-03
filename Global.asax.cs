@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using BoysToys.Models;
+using BoysToys.Logic;
 
 namespace BoysToys
 {
@@ -21,6 +22,10 @@ namespace BoysToys
 
             // Initialize the product database.
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+            // Create the administrator role and user.
+            RoleActions roleActions = new RoleActions();
+            roleActions.createAdmin();
         }
     }
 }
